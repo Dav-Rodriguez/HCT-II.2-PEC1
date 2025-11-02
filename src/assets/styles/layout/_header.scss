@@ -1,0 +1,39 @@
+@use "../abstracts/variables";
+@use "../abstracts/mixins"; // Mixins para media queries
+
+.header {
+  background-color: variables.$color-background;
+  padding: variables.$spacing-medium variables.$spacing-large;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+
+  // ANIDADO para el elemento BEM header__logo
+  &__logo {
+    max-width: px-to-rem(150); // Se usa la función
+  }
+
+  // ANIDADO para el elemento BEM header__nav
+  &__nav {
+    // ANIDADO para el elemento BEM header__menu
+    .header__menu {
+      list-style: none;
+      display: flex;
+      gap: variables.$spacing-large;
+
+      // ANIDADO profundo para el modificador
+      &-item {
+        .header__menu-link {
+          color: variables.$color-text-dark;
+          text-decoration: none;
+          transition: color 0.3s ease;
+
+          &:hover {
+            // ANIDADO de pseudo-clase
+            color: variables.$color-primary;
+          }
+        }
+      }
+    }
+  }
+}

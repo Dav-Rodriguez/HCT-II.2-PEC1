@@ -1,0 +1,22 @@
+@use "../abstracts/variables";
+@use "../abstracts/functions";
+
+// Estilos para teléfonos - movile first
+.header {
+  flex-direction: column; // Se apilan elementos en móvil
+
+  .header__nav {
+    margin-top: variables.$spacing-medium;
+  }
+}
+
+// MEDIA QUERY para Tablet y Escritorio
+@media (min-width: variables.$breakpoint-tablet) {
+  .header {
+    flex-direction: row; // En tablet se vuelve a poner en línea
+  }
+
+  .section--hero {
+    padding-top: functions.px-to-rem(150);
+  }
+}

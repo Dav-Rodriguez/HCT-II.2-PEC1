@@ -1,0 +1,9 @@
+@use "variables";
+
+// Función para convertir píxeles a rem, basada en un tamaño base de 16px.
+@function px-to-rem($pixels) {
+  @return $pixels / 16 + rem;
+}
+
+// Ejemplo de uso:
+// font-size: px-to-rem(18); Devolvería 1.125rem

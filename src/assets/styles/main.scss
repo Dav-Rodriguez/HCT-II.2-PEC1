@@ -15,6 +15,26 @@
 
 @use "layouts/home";
 
+/***********/
+
+// ABSTRACTS (Variables, Funciones, Mixins)
+@use "abstracts/variables";
+@use "abstracts/functions";
+@use "abstracts/mixins";
+
+// BASE (Estilos globales)
+@use "base/base";
+@use "base/typography";
+
+// LAYOUT (Estructura general)
+@use "layout/layout";
+@use "layout/header";
+@use "layout/sections"; // Se usa sections para el <main>
+@use "layout/footer";
+
+// UTILS (Clases de ayuda y responsive)
+@use "utils/responsive";
+
 // Importar Font Awesome (usando la ruta relativa a node_modules)
 @import "../../../node_modules/@fortawesome/fontawesome-free/css/all.min.css";
 /**
