@@ -6,31 +6,233 @@
     <meta name="viewport" content="width=device-width" />
     <link rel="stylesheet" type="text/css" href="./assets/styles/main.scss" />
     <!-- do not remove this line! -->
-    <title>UOC Boilerplate</title>
+    <title>Descubre Tena - La capital amazónica de la aventura</title>
+    <meta
+      name="description"
+      content="Descubre Tena, la puerta de entrada a la Amazonía ecuatoriana. Aventura, naturaleza, gastronomía y cultura en un solo destino."
+    />
   </head>
   <body>
     <div class="uoc-container">
-      <picture>
-        <source
-          srcset="./assets/images/logo.png?as=webp&width=350"
-          type="image/webp"
-        />
-        <img
-          src="./assets/images/logo.png?width=350"
-          alt="Universitat Oberta de Catalunya"
-          class="uoc-logo"
-        />
-      </picture>
-      <h1 class="uoc-title">Hello, UOC!</h1>
-      <p>
-        This is a starter template for the Advanced HTML and CSS Tools courses
-        from the Master's Program in Multimedia Applications and the Master's
-        Program in Web App and Website Development at the Universitat Oberta de
-        Catalunya.
-      </p>
-      <i class="fas fa-check-circle"></i>
-      <i class="fab fa-github"></i>
+      <!-- HEADER -->
+      <header class="header">
+        <div class="header__logo">
+          <picture>
+            <source
+              srcset="./assets/images/logo.png?as=webp&width=300"
+              type="image/webp"
+            />
+            <img
+              src="./assets/images/logo.png?width=300"
+              alt="Logo Descubre Tena"
+              class="header__logo-img"
+            />
+          </picture>
+        </div>
+        <nav class="header__nav" aria-label="Navegación principal">
+          <ul class="header__menu">
+            <li class="header__menu-item">
+              <a href="#about" class="header__menu-link"
+                ><i class="fas fa-info-circle"></i> Sobre Tena</a
+              >
+            </li>
+            <li class="header__menu-item">
+              <a href="#places" class="header__menu-link"
+                ><i class="fas fa-map-marked-alt"></i> Lugares</a
+              >
+            </li>
+            <li class="header__menu-item">
+              <a href="#food" class="header__menu-link"
+                ><i class="fas fa-utensils"></i> Gastronomía</a
+              >
+            </li>
+            <li class="header__menu-item">
+              <a href="#map" class="header__menu-link"
+                ><i class="fas fa-map"></i> Cómo llegar</a
+              >
+            </li>
+          </ul>
+        </nav>
+      </header>
+
+      <!-- MAIN -->
+      <main class="main-content">
+        <!-- HERO -->
+        <section id="hero" class="section section--hero" data-aos="fade-up">
+          <h1 class="section__title">Descubre Tena</h1>
+          <p class="section__subtitle">La capital amazónica de la aventura</p>
+          <div class="section__image">
+            <picture>
+              <source
+                srcset="./assets/images/Tena-tower.webp?as=webp&width=700"
+                type="image/webp"
+              />
+              <img
+                src="./assets/images/Tena-tower.webp?width=700"
+                alt="Vista panorámica de Tena"
+                class="section__image-img"
+              />
+            </picture>
+          </div>
+          <a href="#about" class="section__cta"
+            ><i class="fas fa-arrow-down"></i> Conoce más</a
+          >
+        </section>
+
+        <!-- SOBRE TENA -->
+        <section id="about" class="section section--about" data-aos="fade-up">
+          <h2 class="section__title">
+            <i class="fas fa-info-circle"></i> Sobre Tena
+          </h2>
+          <p class="section__text">
+            Tena, ubicada en la provincia de Napo, es una de las principales
+            puertas de entrada a la Amazonía ecuatoriana. Conocida por sus ríos,
+            selvas y cultura, combina naturaleza exuberante con hospitalidad
+            única.
+          </p>
+          <div class="section__icons">
+            <i class="section__icon fas fa-tree" aria-hidden="true"></i>
+            <i class="section__icon fas fa-water" aria-hidden="true"></i>
+            <i class="section__icon fas fa-hiking" aria-hidden="true"></i>
+          </div>
+        </section>
+
+        <!-- LUGARES -->
+        <section id="places" class="section section--places" data-aos="fade-up">
+          <h2 class="section__title">
+            <i class="fas fa-map-marked-alt"></i> Lugares que no puedes perderte
+          </h2>
+          <div class="section__gallery">
+            <article class="card">
+              <picture>
+                <source
+                  srcset="
+                    ./assets/images/cueva-mantayupano.webp?as=webp&width=700
+                  "
+                  type="image/webp"
+                />
+                <img
+                  src="./assets/images/cueva-mantayupano.webp?width=700"
+                  alt="Cueva Mantayupano"
+                  class="card__image"
+                />
+              </picture>
+              <h3 class="card__title">Cueva de Mantayupano</h3>
+              <p class="card__text">
+                Una de las cavernas más impresionantes del oriente ecuatoriano,
+                perfecta para la exploración y el turismo de aventura.
+              </p>
+            </article>
+
+            <article class="card">
+              <picture>
+                <source
+                  srcset="
+                    ./assets/images/laguna-azul-tena-ecuador.webp?as=webp&width=700
+                  "
+                  type="image/webp"
+                />
+                <img
+                  src="./assets/images/laguna-azul-tena-ecuador.webp?width=700"
+                  alt="Laguna Azul"
+                  class="card__image"
+                />
+              </picture>
+              <h3 class="card__title">Laguna Azul</h3>
+              <p class="card__text">
+                Ideal para nadar tranquilamente y disfrutar de sus aguas
+                cristalinas rodeadas de selva tropical.
+              </p>
+            </article>
+
+            <article class="card">
+              <picture>
+                <source
+                  srcset="
+                    ./assets/images/Malecon_de_Tena.webp?as=webp&width=700
+                  "
+                  type="image/webp"
+                />
+                <img
+                  src="./assets/images/Malecon_de_Tena.webp?width=700"
+                  alt="Malecón Escénico de Tena"
+                  class="card__image"
+                />
+              </picture>
+              <h3 class="card__title">Malecón Escénico</h3>
+              <p class="card__text">
+                El lugar perfecto para caminar, disfrutar de la gastronomía
+                local y admirar los atardeceres del oriente.
+              </p>
+            </article>
+          </div>
+        </section>
+
+        <!-- GASTRONOMÍA -->
+        <section id="food" class="section section--food" data-aos="fade-up">
+          <h2 class="section__title">
+            <i class="fas fa-utensils"></i> Sabores de la Amazonía
+          </h2>
+          <ul class="list list--food">
+            <li class="list__item">
+              <i class="fas fa-fish"></i> Maito de pescado
+            </li>
+            <li class="list__item">
+              <i class="fas fa-seedling"></i> Chontacuro
+            </li>
+            <li class="list__item">
+              <i class="fas fa-leaf"></i> Yuca y plátano amazónico
+            </li>
+          </ul>
+          <div class="section__image">
+            <picture>
+              <source
+                srcset="./assets/images/maito-de-pescado.webp?as=webp&width=700"
+                type="image/webp"
+              />
+              <img
+                src="./assets/images/maito-de-pescado.webp?width=700"
+                alt="Maito de pescado tradicional amazónico"
+                class="section__image-img"
+              />
+            </picture>
+          </div>
+        </section>
+
+        <!-- MAPA -->
+        <section id="map" class="section section--map" data-aos="fade-up">
+          <h2 class="section__title">
+            <i class="fas fa-map"></i> Cómo llegar a Tena
+          </h2>
+          <div class="section__image">
+            <picture>
+              <source
+                srcset="./assets/images/mapa-tena.webp?as=webp&width=700"
+                type="image/webp"
+              />
+              <img
+                src="./assets/images/mapa-tena.webp?width=700"
+                alt="Mapa de ubicación de Tena, Napo, Ecuador"
+                class="section__image-img"
+              />
+            </picture>
+          </div>
+        </section>
+      </main>
+
+      <!-- FOOTER -->
+      <footer class="footer">
+        <p class="footer__text">
+          © 2025 Descubre Tena - Todos los derechos reservados.
+        </p>
+        <div class="footer__social">
+          <a href="#" class="footer__icon"><i class="fab fa-facebook-f"></i></a>
+          <a href="#" class="footer__icon"><i class="fab fa-instagram"></i></a>
+          <a href="#" class="footer__icon"><i class="fab fa-github"></i></a>
+        </div>
+      </footer>
     </div>
+
     <include src="./views/footer.html"></include>
     <script type="module" src="./assets/scripts/main.js"></script>
     <!-- do not remove this line! -->

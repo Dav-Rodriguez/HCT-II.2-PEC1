@@ -51,6 +51,7 @@
   },
   "dependencies": {
     "@fortawesome/fontawesome-free": "^7.1.0",
+    "aos": "^2.3.4",
     "font-awesome": "^4.7.0"
   }
 }
